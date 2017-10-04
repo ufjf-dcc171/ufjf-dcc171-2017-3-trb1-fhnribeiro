@@ -97,5 +97,9 @@ public class Pedido {
     public String toString(){
         return this.id+" ("+formato.format(this.data)+") - "+(this.aberto?"Aberto":"Fechado")+" - Total: "+totalPedido();
     }
+
+    void removeProduto(Produto p) {
+        this.produtos.remove(p);
+    }
     
 }

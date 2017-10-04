@@ -43,7 +43,7 @@ public class JanelaNotaFiscal extends JFrame{
         totalPanel.add(lblTotal);
         totalPanel.add(lblValueTotal);
         add(totalPanel,BorderLayout.SOUTH);
-        setSize(400,500);
+        setSize(480,500);
         lblValueTotal.setText("R$ "+Float.toString(pedido.totalPedido()));
         this.setVisible(true);
         this.setLocationRelativeTo(null);

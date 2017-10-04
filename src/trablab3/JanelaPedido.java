@@ -53,6 +53,19 @@ public class JanelaPedido extends JFrame{
                 }
             }
         });
+        
+        removeProduto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Produto p=lstNovosProdutos.getSelectedValue();
+                if(p!=null){
+                    pedido.removeProduto(p);
+                    lstProdutos.clearSelection();
+                    lstProdutos.updateUI();
+                    mesa.lstPedido.updateUI();
+                }
+            }
+        });
     }
     
     public void viewPedido(JanelaMesas mesa){

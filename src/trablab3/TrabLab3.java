@@ -20,7 +20,7 @@ public class TrabLab3 {
      */
     public static void main(String[] args) {
         JanelaMesas janela = new JanelaMesas(getSampleMesa());
-        janela.setSize(550,350);
+        janela.setSize(650,350);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setLocationRelativeTo(null);
         janela.setVisible(true);
